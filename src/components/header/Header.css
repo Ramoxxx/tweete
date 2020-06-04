@@ -1,6 +1,45 @@
 .Header{
-    background-color: black;
+    background-color:var(--background-item-color);
     display: flex;
     padding: 12px;
     justify-content: space-between;
+}
+
+.Header input{
+border-radius: 3px;    
+border: 0;
+width: 400px;
+margin: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+
+.Logo {
+background: var(--primary-color);
+border-radius: 47px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 35px;
+line-height: 25px;
+text-align: left;
+letter-spacing: 0.165;
+padding: 10px 30px;
+color: black;
+}
+
+.Home {
+    font-size: 20px;
+    
+    color:rgb(14, 84, 165);
+}
+
+.Tools {
+    font-size: 20px;
+
+    color:rgb(14, 84, 165);
+}
+
+.Premium {
+    font-size: 20px;
+
+    color:rgb(14, 84, 165);
 }

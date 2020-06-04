@@ -1,0 +1,81 @@
+.title{
+    color: var(--primary-color);
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+    text-align: start;
+    position: relative;
+    margin-left: 20px;
+}
+
+.card{
+    background-color:var(--background-item-color);
+    color:#fff;
+    max-width: 450px;
+    max-height: 400px;
+    border-radius: 010px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    flex-direction: column
+}
+
+.poster-image{
+    background-image: url('../images/travis.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    padding: 100px 100px;
+    margin-left: 20px;
+}
+
+.ig{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.amount{
+    font-size: 13px;
+    color:rgb(167, 163, 163);
+    font-weight: lighter;
+}
+
+.joined{
+    font-size: 13px;
+    color:rgb(167, 163, 163);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px 0px 30px;
+  }
+
+  .ctnFlex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-view-twitter{
+      background-color: #d2d7d6;
+      display: flex;
+      border-radius: 8px;
+      padding: 5px;
+      color: var(--primary-color);
+      font-variant: small-caps;
+      margin: 14px;
+      justify-content: center;
+      text-decoration: none;
+  }
+
+  .btn-follow-us{
+    background-color: #d2d7d6;
+    display: flex;
+    border-radius: 8px;
+    padding: 5px;
+    color: var(--primary-color);
+    font-variant: small-caps;
+    margin: 14px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-decoration: none;
+  }
