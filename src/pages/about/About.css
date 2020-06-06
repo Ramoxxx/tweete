@@ -1,0 +1,9 @@
+.title{
+    font-size: 30px;
+    color:var(primary-color);
+    text-align: center;
+}
+
+.description{
+    color: #fff;
+}

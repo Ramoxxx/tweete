@@ -21,7 +21,7 @@
 }
 
 .poster-image{
-    background-image: url('../images/travis.png');
+    background-image: url('../../images/travis.png');
     background-repeat: no-repeat;
     background-size: 200px;
     padding: 100px 100px;
