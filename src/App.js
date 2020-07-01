@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom'
 
 import Header  from "./components/Header/Header.jsx"
 
-import Profiles from "./pages/profiles/Profiles.jsx"
+import Series from "./pages/series/Series.jsx"
 import About from "./pages/about/About.jsx"
 
 
@@ -13,11 +13,11 @@ function App(){
     <div className="App">
       <Header/>
       <BrowserRouter>
-        <NavLink to="/profiles" className="nav-link">Profiles</NavLink>
+        <NavLink to="/series" className="nav-link">Series</NavLink>
         <NavLink to="/about" className="nav-link">About</NavLink>
         <Switch>
-          <Route exact path="/" component={Profiles}/>
-          <Route path="/profiles" component={Profiles}/>
+          <Route exact path="/" component={Series}/>
+          <Route path="/series" component={Series}/>
           <Route path="/about" component={About}/>
         </Switch>
       </BrowserRouter>

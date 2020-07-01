@@ -1,21 +1,34 @@
-import React from 'react'
+
+import React from 'react';
 import './Card.css'
 
-export default function Card(){
-    return(
-        <div className="card">
-            <h1 className="title">Travis Scott</h1>
-            <div class="ctnFlex">
-            <div className="poster-image"></div>
-            <div className="text">
-            <h2 className="ig">@trvisXX</h2>
-            <h3>ASTROWORLD</h3>
-            <h1 className="amount">1.048 Tweets</h1>
-            <h2 className="joined">Joined April 2010</h2>
-            </div>
-            </div>
-            <a href="#" className="btn-view-twitter">View on twitter</a>
-            <a href="#" className="btn-follow-us">Follow us on twitter</a>
-            </div>
-    )
+export default function CardSerie({ serie }) {
+    const nota = serie.vote_average.toFixed(1)
+    const imgUrl = "https://image.tmdb.org/t/p/w200/"
+    const data = new Date(serie.first_air_date)
+    const data_lancamento = data.toLocaleDateString()
+  return (
+    <div className="card">
+      <span className="material-icons fav-btn">add_circle_outline</span>
+      <div
+       className="poster-image"
+       style={{ backgroundImage: `url(${imgUrl}${serie.poster_path})`
+       } }
+       >
+      </div>
+      <div className="card-detail">
+        <div className="score"><span className="material-icons">grade</span>
+        {nota}
+        </div>
+  <h1 className="title">{serie.name}</h1>
+  <h2>{data_lancamento}</h2>
+      </div>
+      <div className="button">
+      <a href="#" className="btn-detail">
+        <span className="material-icons">play_circle_filled</span>
+        Details
+      </a>
+      </div>
+    </div>
+  );
 }

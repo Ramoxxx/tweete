@@ -1,9 +1,18 @@
 .title{
     font-size: 30px;
-    color:var(primary-color);
-    text-align: center;
+    color:var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .description{
-    color: #fff;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width:600px;
+  height:100px;
+  margin:auto;
+  font-family:Arial;
+  color:#fff; 
 }
