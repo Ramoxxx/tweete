@@ -4,7 +4,6 @@ import './About.css'
 
 export default function(){
     return(
-
         <Fragment>     
             <div className="content-about">
             <h1 className="title">About</h1>

@@ -13,7 +13,9 @@ function Header(props){
     }
     return(
         <div className="Header">
+            <a href="#" className="link">
             <div className="Logo">TweeTube</div>
+            </a>
             <form onSubmit={buscar}>
                 <input 
                 type="text" 
