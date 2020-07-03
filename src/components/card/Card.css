@@ -3,9 +3,12 @@
     color: #fff;
     max-width: 220px;
     margin: 15px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px ;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
 }
 
 .title{
@@ -34,19 +37,27 @@
     padding: 5px;
     color: #fff;
     margin: 5px;
+    flex: 1;
+}
+
+.card .score{
+    display: flex;
+    align-items: center;
 }
 
 .card-detail span{
-    color: #ff0;  
+    color: #ff0;
+    margin-right: 5px;  
 }
 
 .card-detail h2{
-    text-align: left;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: lighter;
+    opacity: 0.7;
 }
 
 .card-detail h2, h1{
-margin: 0px;
+margin: 0 0 0 10px;
 }
 .btn-detail{
     background-color:var(--primary-color);
@@ -59,4 +70,8 @@ margin: 0px;
     align-items: center;
     text-decoration: none;
     
+}
+
+.btn-detail:hover{
+    opacity: 0.7;
 }
