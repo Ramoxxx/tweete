@@ -9,7 +9,7 @@ import Popular from "./pages/popular/Popular.jsx"
 import TopRated from "./pages/rated/TopRated.jsx"
 import About from "./pages/about/About.jsx"
 import Search from "./pages/search/Search.jsx"
-
+import Serie from "./pages/serie/Serie"
 
 function App(){
   return (
@@ -27,6 +27,7 @@ function App(){
           <Route path="/top-rated" component={TopRated}/>
           <Route path="/popular" component={Popular}/>
           <Route path="/about" component={About}/>
+          <Route path="/serie/:serieId" component={Serie}/>
           <Route path="/search" component={Search}/>
         </Switch>
       </BrowserRouter>

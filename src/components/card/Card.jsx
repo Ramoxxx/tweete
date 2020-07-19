@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './Card.css'
+import { NavLink } from 'react-router-dom';
 
 export default function CardSerie({ serie }) {
     const nota = serie.vote_average.toFixed(1)
@@ -23,8 +24,9 @@ export default function CardSerie({ serie }) {
   <h1 className="title">{serie.name}</h1>
   <h2>{data_lancamento}</h2>
       </div>
-      <a href="#" className="btn-detail">
-        <span className="material-icons">play_circle_filled</span>Details</a>
+      <NavLink to={`/serie/${serie.id}`} className="btn-detail">
+        <span className="material-icons">play_circle_filled</span>Details
+      </NavLink>
       </div>
   );
 }
